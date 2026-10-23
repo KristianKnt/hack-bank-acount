@@ -53,7 +53,7 @@ public abstract class CuentaBancaria {
 
   public void aplicarInteres(){
     double interes = this.saldo * (this.tasaInteres / 100);
-    //saldo = saldo + interes;
+    this.saldo = this.saldo + interes;
     System.out.println("El interes generado es : "+ interes);
   }
 
