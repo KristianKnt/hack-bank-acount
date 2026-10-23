@@ -44,7 +44,7 @@ public abstract class CuentaBancaria {
     }
     this.saldo = this.saldo + monto;
     System.out.println("Monto depositado :"+ monto);
-    System.out.println("Nuevo Salo :"+ this.saldo);
+    System.out.println("Nuevo Saldo: " + this.saldo);
 
     return this.saldo;
   }
@@ -57,8 +57,11 @@ public abstract class CuentaBancaria {
   }
 
   public double aplicarInteres(){
-    double interes = this.saldo * (this.tasaInteres / 100);
-    System.out.println("El interes generado es : "+ interes);
+    double interes = 0.0;
+    if (this.saldo > 0) {
+      interes = this.saldo * (this.tasaInteres / 100);
+    }
+    System.out.println("El interes generado es : " + interes);
     this.saldo = this.saldo + interes;
     return interes;
   }

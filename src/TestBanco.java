@@ -7,20 +7,20 @@ public class TestBanco {
     // PASO 1: CREAR LAS CUENTAS
     // ========================================
 
-    CuentaAhorro ana = new CuentaAhorro(
+    CuentaBancaria ana = new CuentaAhorro(
         "AH001",
         "Ana Perez",
         50000,
         "2024-01-15"
     );
 
-    CuentaCorriente luis = new CuentaCorriente(
+    CuentaBancaria luis = new CuentaCorriente(
         "CC001",
         "Luis Gomez",
         20000
     );
 
-    CuentaEmpresarial tech = new CuentaEmpresarial(
+    CuentaBancaria tech = new CuentaEmpresarial(
         "EM001",
         "Tech Solutions",
         200000,
@@ -28,7 +28,7 @@ public class TestBanco {
         "123456789-0"
     );
 
-    CuentaAhorro maria = new CuentaAhorro(
+    CuentaBancaria maria = new CuentaAhorro(
         "AH002",
         "Maria Lopez",
         15000,
