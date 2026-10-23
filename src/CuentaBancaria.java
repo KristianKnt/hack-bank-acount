@@ -51,6 +51,11 @@ public abstract class CuentaBancaria {
 
   public abstract void retirar(double monto);
 
+  protected void actualizarSaldo(double nuevoSaldo){
+    this.saldo = nuevoSaldo;
+
+  }
+
   public double aplicarInteres(){
     double interes = this.saldo * (this.tasaInteres / 100);
     System.out.println("El interes generado es : "+ interes);
