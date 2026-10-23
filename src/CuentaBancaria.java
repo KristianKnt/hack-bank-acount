@@ -51,10 +51,18 @@ public abstract class CuentaBancaria {
 
   public abstract void retirar(double monto);
 
-  public void aplicarInteres(){
+  public double aplicarInteres(){
     double interes = this.saldo * (this.tasaInteres / 100);
-    this.saldo = this.saldo + interes;
     System.out.println("El interes generado es : "+ interes);
+    this.saldo = this.saldo + interes;
+    return interes;
+  }
+
+  public void mostrarInfo(){
+    System.out.println("Su numero de cuenta :"+numeroCuenta);
+    System.out.println("Titular : "+titular);
+    System.out.println("Saldo actual :"+ saldo);
+    System.out.println("Interes actual :"+ tasaInteres);
   }
 
 }
