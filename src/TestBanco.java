@@ -17,5 +17,7 @@ public class TestBanco{
     CuentaBancaria maria = new CuentaAhorro(
         "AH002", "Maria Lopez", 15000, "2024-02-01"
     );
+
+    luis.retirar(25000);
   }
 }

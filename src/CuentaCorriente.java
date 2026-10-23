@@ -56,9 +56,7 @@ public class CuentaCorriente extends CuentaBancaria{
       );
     }
 
-    System.out.println(
-        "Nuevo saldo: $" + String.format("%.2f", getSaldo())
-    );
+    System.out.println("Nuevo saldo: $" + String.format("%.2f", getSaldo()));
 
 
   }
